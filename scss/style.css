@@ -156,11 +156,13 @@
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  border: 1px solid transparent;
 }
 
 .back a:hover {
   background-color: #fff;
   color: #335384;
+  border: 1px solid #335384;
 }
 
 .back .date {

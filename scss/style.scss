@@ -126,10 +126,12 @@
     margin-top: 120px;
     cursor: pointer;
     transition: 0.2s;
+    border: 1px solid transparent;
 
     &:hover {
       background-color: #fff;
       color: #335384;
+      border: 1px solid #335384;
     }
   }
 
