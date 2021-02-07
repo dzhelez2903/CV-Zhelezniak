@@ -1,1 +1,196 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../fonts/myriadpro-regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.CV {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 37% 63%;
+      grid-template-columns: 37% 63%;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+      grid-template-areas: "photo name" "contacts back" "skills back";
+  margin: 0 auto;
+  width: 1100px;
+  border: 1px solid #335384;
+}
+
+.photo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: photo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 110px;
+  background-color: #335384;
+}
+
+.photo img {
+  border-radius: 50%;
+}
+
+.name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding-left: 55px;
+}
+
+.name h1 {
+  font-family: "Myriad Pro";
+  color: #335384;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 7px;
+}
+
+.contacts {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contacts;
+  background-color: #335384;
+  padding: 100px 0 0 65px;
+}
+
+.contacts h2 {
+  font-family: "Myriad Pro";
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+
+.contacts ul {
+  list-style: none;
+}
+
+.contacts li {
+  margin-top: 50px;
+}
+
+.contacts li:nth-child(4) {
+  margin-right: 0;
+}
+
+.contacts a {
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  color: #fff;
+}
+
+.back {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: back;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 55px;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+}
+
+.back h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #5ba7d1;
+  margin: 60px 0 25px 0;
+}
+
+.back h3:first-child {
+  margin-top: 105px;
+}
+
+.back p {
+  color: #335384;
+  line-height: 2;
+}
+
+.back a {
+  display: block;
+  width: 40%;
+  background-color: #335384;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 120px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.back a:hover {
+  background-color: #fff;
+  color: #335384;
+}
+
+.back .date {
+  font-weight: lighter;
+  color: #335384;
+}
+
+.skills {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: skills;
+  background-color: #335384;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0 0 65px;
+}
+
+.skills h2 {
+  font-family: "Myriad Pro";
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+
+.skills li {
+  font-family: "Myriad Pro";
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */

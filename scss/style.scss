@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../fonts/myriadpro-regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.CV {
+  display: grid;
+  grid-template-columns: 37% 63%;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "photo name"
+    "contacts back"
+    "skills back";
+  margin: 0 auto;
+  width: 1100px;
+  border: 1px solid #335384;
+}
+
+.photo {
+  grid-area: photo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+  background-color: #335384;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.name {
+  grid-area: name;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 55px;
+
+  h1 {
+    font-family: "Myriad Pro";
+    color: #335384;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 7px;
+  }
+}
+
+.contacts {
+  grid-area: contacts;
+  background-color: #335384;
+  padding: 100px 0 0 65px;
+
+  h2 {
+    font-family: "Myriad Pro";
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 55px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-top: 50px;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    color: #fff;
+
+  }
+}
+
+.back {
+  grid-area: back;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 55px;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+
+  h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #5ba7d1;
+    margin: 60px 0 25px 0;
+
+    &:first-child {
+      margin-top: 105px;
+    }
+  }
+
+  p {
+    color: #335384;
+    line-height: 2;
+  }
+
+  a {
+    display: block;
+    width: 40%;
+    background-color: #335384;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 40px;
+    margin-top: 120px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #fff;
+      color: #335384
+    }
+  }
+
+  .date {
+    font-weight: lighter;
+    color: #335384;
+  }
+}
+
+.skills {
+  grid-area: skills;
+  background-color: #335384;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 0 65px;
+
+  h2 {
+    font-family: "Myriad Pro";
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 55px;
+  }
+
+  li {
+    font-family: "Myriad Pro";
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
