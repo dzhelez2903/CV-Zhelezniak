@@ -80,7 +80,11 @@
     font-family: "Myriad Pro";
     font-size: 20px;
     color: #fff;
+    transition: 0.2s;
 
+    &:hover {
+      color: lightgrey;
+    }
   }
 }
 
@@ -125,7 +129,7 @@
 
     &:hover {
       background-color: #fff;
-      color: #335384
+      color: #335384;
     }
   }
 

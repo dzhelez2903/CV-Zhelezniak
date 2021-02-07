@@ -99,6 +99,12 @@
   font-family: "Myriad Pro";
   font-size: 20px;
   color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contacts a:hover {
+  color: lightgrey;
 }
 
 .back {
