@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Myriad Pro Light";
+  src: url(../fonts/);
+  font-weight: normal;
+  font-style: normal;
+}
+
 .CV {
   display: -ms-grid;
   display: grid;
@@ -166,7 +173,7 @@
 }
 
 .back .date {
-  font-weight: lighter;
+  font-family: "Myriad Pro Light";
   color: #335384;
 }
 
